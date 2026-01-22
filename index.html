@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashira & Jake | 30 March 2027</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --pearl: #F8F6F3;
+            --midnight: #1C1C1C;
+            --champagne: #D4BFA0;
+            --rose: #C5A3A0;
+            --white: #FFFFFF;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: var(--midnight);
+            background: var(--pearl);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--midnight);
+            color: var(--white);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(28,28,28,0.45), rgba(28,28,28,0.45)),
+                    url('https://cdn.guides4brides.co.uk/prod/crm/sites/guides_for_brides/suppliers/2ba17666-7fb4-421a-a62e-7865a41540d5/jemimah_james_4redonblondephotography.webp');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--white);
+        position: relative;
+        }
+
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+            background: linear-gradient(to top, var(--pearl), transparent);
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 2rem;
+            animation: luxeFadeIn 2s ease-out;
+        }
+
+        @keyframes luxeFadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .monogram {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            border: 2px solid var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            letter-spacing: 0.1em;
+            opacity: 0.95;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            margin-bottom: 1rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero .divider-line {
+            width: 150px;
+            height: 1px;
+            background: var(--white);
+            margin: 2rem auto;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2.3vw, 1.2rem);
+            margin: 0.5rem 0;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .hero .date {
+            font-size: clamp(1.4rem, 3.5vw, 2rem);
+            margin: 2rem 0 1rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 55px;
+            margin-top: 3rem;
+            background: transparent;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border: 2px solid var(--white);
+            transition: all 0.5s ease;
+            position: relative;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border: 1px solid var(--white);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .btn:hover::after, .btn:focus::after {
+            opacity: 1;
+        }
+
+        .btn:hover, .btn:focus {
+            background: var(--white);
+            color: var(--midnight);
+            outline: none;
+        }
+
+        section {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 8rem 2rem;
+        }
+
+        section:focus {
+            outline: none;
+        }
+
+        .section-label {
+            text-align: center;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--champagne);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            text-align: center;
+            color: var(--midnight);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .ornament {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--champagne);
+            margin: 2rem 0 3rem;
+        }
+
+        h3 {
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+            margin: 3rem 0 1.5rem;
+            color: var(--midnight);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        .lead-text {
+            text-align: center;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            line-height: 2;
+            font-style: italic;
+            color: #555;
+        }
+
+        .luxe-card {
+            background: var(--white);
+            padding: 4rem;
+            margin: 4rem 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border-top: 3px solid var(--champagne);
+        }
+
+        .info-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .info-col h4 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--champagne);
+            margin-bottom: 1.25rem;
+        }
+
+        .info-col p {
+            font-size: 1rem;
+            line-height: 1.9;
+        }
+
+        .elegant-timeline {
+            margin-top: 4rem;
+        }
+
+        .timeline-event {
+            display: flex;
+            gap: 3rem;
+            margin: 3rem 0;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .timeline-event:last-child {
+            border-bottom: none;
+        }
+
+        .event-time {
+            flex: 0 0 140px;
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--champagne);
+            text-align: right;
+        }
+
+        .event-content h4 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .hotel-showcase {
+            margin-top: 4rem;
+        }
+
+        .hotel-item {
+            background: var(--white);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: all 0.4s ease;
+        }
+
+        .hotel-item:hover, .hotel-item:focus-within {
+            transform: translateX(10px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .hotel-item h4 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--midnight);
+            letter-spacing: 0.05em;
+        }
+
+        .hotel-item p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .hotel-item a {
+            color: var(--champagne);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            transition: color 0.3s ease;
+        }
+
+        .hotel-item a:hover, .hotel-item a:focus {
+            color: var(--rose);
+        }
+
+        .importance-notice {
+            background: linear-gradient(135deg, var(--rose) 0%, var(--champagne) 100%);
+            color: var(--white);
+            padding: 4rem;
+            margin: 5rem 0;
+            text-align: center;
+        }
+
+        .importance-notice h3 {
+            margin-top: 0;
+            color: var(--white);
+            font-size: 1.8rem;
+        }
+
+        .importance-notice ul {
+            list-style: none;
+            margin-top: 2rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .importance-notice li {
+            margin: 1.5rem 0;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        form {
+            background: var(--white);
+            padding: 4rem;
+            margin-top: 4rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        label {
+            display: block;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--midnight);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 16px 18px;
+            border: 2px solid #e0e0e0;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            background: var(--pearl);
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--champagne);
+            background: var(--white);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        button[type="submit"] {
+            margin-top: 3rem;
+            padding: 18px 55px;
+            background: var(--midnight);
+            color: var(--white);
+            border: 2px solid var(--midnight);
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+        }
+
+        button[type="submit"]::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border: 1px solid var(--midnight);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        button[type="submit"]:hover::after, button[type="submit"]:focus::after {
+            opacity: 1;
+        }
+
+        button[type="submit"]:hover, button[type="submit"]:focus {
+            background: var(--champagne);
+            border-color: var(--champagne);
+        }
+
+        .registry-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .registry-item {
+            background: var(--white);
+            padding: 3.5rem 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.4s ease;
+        }
+
+        .registry-item:hover, .registry-item:focus-within {
+            transform: translateY(-10px);
+        }
+
+        .registry-item h4 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--champagne);
+            letter-spacing: 0.05em;
+        }
+
+        .registry-item p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+        }
+
+        .faq-elegant {
+            max-width: 750px;
+            margin: 4rem auto 0;
+        }
+
+        .faq-entry {
+            margin: 3.5rem 0;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .faq-entry:last-child {
+            border-bottom: none;
+        }
+
+        .faq-entry h4 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            margin-bottom: 1.25rem;
+            color: var(--champagne);
+            letter-spacing: 0.05em;
+        }
+
+        .faq-entry p {
+            line-height: 1.9;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: var(--midnight);
+            color: var(--white);
+        }
+
+        footer .monogram-footer {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 2rem;
+            border: 1px solid var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+            opacity: 0.9;
+        }
+
+        footer p {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 5rem 1.5rem;
+            }
+
+            .luxe-card, form {
+                padding: 2.5rem;
+            }
+
+            .timeline-event {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .event-time {
+                text-align: left;
+            }
+
+            .hotel-item:hover {
+                transform: none;
+            }
+        }
+
+        .lang-toggle {
+        position: fixed;
+        top: 18px;
+        right: 18px;
+        z-index: 9999;
+
+        padding: 10px 14px;
+        border: 1px solid rgba(255,255,255,0.8);
+        background: rgba(28,28,28,0.35);
+        color: var(--white);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        cursor: pointer;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        transition: all 0.25s ease;
+        }
+
+        .lang-toggle:hover, .lang-toggle:focus {
+        outline: none;
+        background: rgba(255,255,255,0.95);
+        color: var(--midnight);
+        border-color: rgba(255,255,255,0.95);
+        }
+
+        @media (max-width: 480px) {
+        .lang-toggle {
+            top: 14px;
+            right: 14px;
+            padding: 9px 12px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <button id="langToggle" class="lang-toggle" type="button" aria-label="Translate to Spanish">
+    ES
+    </button>
+
+
+    <header class="hero" role="banner">
+        <!-- Replace with your Sandon Hall hero image - recommended size: 1920x1080px -->
+        <div class="hero-content">
+            <div class="monogram">N&J</div>
+            <h1>Nashira &amp; Jake</h1>
+            <div class="divider-line"></div>
+            <p class="date">30 March 2027</p>
+            <p>Sandon Hall · Stafford</p>
+            <a href="#rsvp" class="btn">Répondez S'il Vous Plaît</a>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="details" tabindex="-1">
+            <div class="section-label">The Celebration</div>
+            <h2>An Invitation</h2>
+            <div class="ornament">❦</div>
+            
+            <p class="lead-text">We joyfully invite you to witness our union and celebrate with us at the magnificent Sandon Hall.</p>
+            
+            <div class="luxe-card">
+                <h3>The Venue</h3>
+                <p style="margin-top: 1.5rem; text-align: center;"><strong>Sandon Hall</strong><br>
+                Sandon, Stafford<br>
+                ST18 0BZ, United Kingdom</p>
+                
+                <p style="margin-top: 2.5rem; text-align: center;">An exquisite historic estate providing the perfect setting for our ceremony and celebration. All events will be held indoors, with the stunning grounds available for your enjoyment.</p>
+                
+                <div class="info-columns">
+                    <div class="info-col">
+                        <h4>Guest Arrival</h4>
+                        <p>12:45 PM<br>Please be punctual</p>
+                    </div>
+                    
+                    <div class="info-col">
+                        <h4>Ceremony</h4>
+                        <p>1:00 PM<br>Exchange of vows</p>
+                    </div>
+                    
+                    <div class="info-col">
+                        <h4>Celebration</h4>
+                        <p>Until 12:30 AM<br>Into the night</p>
+                    </div>
+                </div>
+                
+                <div class="info-columns" style="margin-top: 3rem;">
+                    <div class="info-col">
+                        <h4>Parking</h4>
+                        <p>Complimentary onsite parking provided</p>
+                    </div>
+                    
+                    <div class="info-col">
+                        <h4>Accessibility</h4>
+                        <p>Full accessible access available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" tabindex="-1">
+            <div class="section-label">The Programme</div>
+            <h2>Timeline</h2>
+            <div class="ornament">❦</div>
+            
+            <div class="elegant-timeline">
+                <div class="timeline-event">
+                    <div class="event-time">1:00 PM</div>
+                    <div class="event-content">
+                        <h4>Ceremony</h4>
+                        <p>We exchange our vows in the presence of family and friends. Please be seated by 12:45 PM.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-time">2:00 PM</div>
+                    <div class="event-content">
+                        <h4>Reception</h4>
+                        <p>Join us for champagne and exquisite canapés as we begin our celebration.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-time">4:00 PM</div>
+                    <div class="event-content">
+                        <h4>Wedding Breakfast</h4>
+                        <p>A carefully curated three-course dining experience.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-time">7:00 PM</div>
+                    <div class="event-content">
+                        <h4>Speeches</h4>
+                        <p>Heartfelt toasts followed by the cutting of our wedding cake.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-time">8:00 PM</div>
+                    <div class="event-content">
+                        <h4>Evening Festivities</h4>
+                        <p>Our first dance marks the beginning of dancing and celebration until midnight.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel" tabindex="-1">
+            <div class="section-label">Lodging</div>
+            <h2>Accommodation</h2>
+            <div class="ornament">❦</div>
+            
+            <p class="lead-text">For your convenience, we recommend these nearby establishments.</p>
+            
+            <div class="hotel-showcase">
+                <div class="hotel-item">
+                    <h4>The Dog and Doublet Inn</h4>
+                    <p>Sandon, ST18 0JD<br>
+                    Perfectly positioned at the entrance to Sandon Hall. Offers 11 charming bedrooms with bed and breakfast service.</p>
+                    <a href="http://www.doganddoubletsandon.co.uk/sleep" target="_blank" rel="noopener noreferrer">Reserve →</a>
+                </div>
+                
+                <div class="hotel-item">
+                    <h4>Swan Hotel Stafford</h4>
+                    <p>Stafford, ST16 2AJ</p>
+                    <a href="http://www.theswanstafford.co.uk" target="_blank" rel="noopener noreferrer">Reserve →</a>
+                </div>
+                
+                <div class="hotel-item">
+                    <h4>Premier Inn Spitfire</h4>
+                    <p>Stafford, ST16 1GX</p>
+                    <a href="http://www.premierinn.com" target="_blank" rel="noopener noreferrer">Reserve →</a>
+                </div>
+                
+                <div class="hotel-item">
+                    <h4>The Moat House</h4>
+                    <p>Stafford, ST17 0RJ<br>
+                    May offer discounted block booking arrangements.</p>
+                    <a href="http://www.moathouse.co.uk" target="_blank" rel="noopener noreferrer">Reserve →</a>
+                </div>
+                
+                <div class="hotel-item">
+                    <h4>The Saracen's Head</h4>
+                    <p>Weston, ST18 0HT</p>
+                    <a href="http://www.saracensheadweston.co.uk" target="_blank" rel="noopener noreferrer">Reserve →</a>
+                </div>
+                
+                <div class="hotel-item">
+                    <h4>Stone House Hotel</h4>
+                    <p>Stone, ST15 0BQ</p>
+                    <a href="http://www.bespokehotels.com/stonehousehotel" target="_blank" rel="noopener noreferrer">Reserve →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp" tabindex="-1">
+            <div class="section-label">Your Response</div>
+            <h2>RSVP</h2>
+            <div class="ornament">❦</div>
+            
+            <p class="lead-text">Kindly respond by <strong>30 September 2026</strong>. We would be delighted to receive your reply at your earliest convenience.</p>
+            
+            <form name="rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="rsvp">
+                <p style="display: none;">
+                    <label>Do not complete: <input name="bot-field"></label>
+                </p>
+                
+                <label for="attendance">Your Attendance *</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="">Please indicate</option>
+                    <option value="yes">Delighted to accept</option>
+                    <option value="no">Regretfully must decline</option>
+                </select>
+                
+                <label for="name">Guest Name(s) *</label>
+                <input type="text" id="name" name="name" required aria-required="true" placeholder="As listed on your invitation">
+                
+                <label for="dietary">Dietary Requirements</label>
+                <textarea id="dietary" name="dietary" placeholder="Please inform us of any allergies or dietary needs"></textarea>
+                
+                <label for="accessibility">Accessibility Requirements</label>
+                <textarea id="accessibility" name="accessibility" placeholder="Share any requirements to ensure your comfort"></textarea>
+                
+                <label for="song">Musical Request (Optional)</label>
+                <input type="text" id="song" name="song" placeholder="Suggest a song for our celebration">
+                
+                <button type="submit">Submit Your Response</button>
+            </form>
+            
+            <div class="importance-notice">
+                <h3>Essential Information</h3>
+                <ul>
+                    <li>We have chosen an adults-only celebration and kindly request your understanding</li>
+                    <li>Guest list is limited to those named on your invitation—no additional guests unless specified</li>
+                    <li>Sandon Hall enforces a strict no-smoking and no-vaping policy throughout the entire property, including all outdoor areas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="registry" tabindex="-1">
+            <div class="section-label">Your Kindness</div>
+            <h2>Registry</h2>
+            <div class="ornament">❦</div>
+            
+            <p class="lead-text">Your presence at our wedding is the most precious gift. Should you wish to bestow a gift, we would be deeply honored by contributions toward our shared future.</p>
+            
+            <div class="registry-showcase">
+                <div class="registry-item">
+                    <h4>Our Home</h4>
+                    <p>A contribution toward purchasing our first home together.</p>
+                </div>
+                
+                <div class="registry-item">
+                    <h4>Our Adventure</h4>
+                    <p>Help create unforgettable memories on our dream honeymoon.</p>
+                </div>
+                
+                <div class="registry-item">
+                    <h4>Our Celebration</h4>
+                    <p>Support our wedding day and help us create this magical experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" tabindex="-1">
+            <div class="section-label">Inquiries</div>
+            <h2>Common Questions</h2>
+            <div class="ornament">❦</div>
+            
+            <div class="faq-elegant">
+                <div class="faq-entry">
+                    <h4>May we bring our children?</h4>
+                    <p>While we adore your little ones, we have chosen an adults-only celebration to allow all guests to fully relax and enjoy the evening without distraction.</p>
+                </div>
+                
+                <div class="faq-entry">
+                    <h4>May we bring an additional guest?</h4>
+                    <p>Our venue has limited capacity, and we can only accommodate guests specifically named on your invitation. If a plus one is included, it will be clearly indicated.</p>
+                </div>
+                
+                <div class="faq-entry">
+                    <h4>What is the smoking policy?</h4>
+                    <p>Sandon Hall maintains a comprehensive no-smoking and no-vaping policy that applies to all areas of the venue, both indoors and outdoors. We respectfully request your full compliance with this requirement.</p>
+                </div>
+                
+                <div class="faq-entry">
+                    <h4>Is the venue accessible?</h4>
+                    <p>Yes, Sandon Hall provides full accessible access throughout the property. Please indicate any specific accessibility needs in your RSVP.</p>
+                </div>
+                
+                <div class="faq-entry">
+                    <h4>Is parking available?</h4>
+                    <p>Complimentary parking is available onsite at Sandon Hall for all guests.</p>
+                </div>
+                
+                <div class="faq-entry">
+                    <h4>What should we wear?</h4>
+                    <p>We request formal attire. Cocktail dresses, evening gowns, suits, and tuxedos are all appropriate.</p>
+                </div>
+                
+                <div class="faq-entry">
+                    <h4>Will everything be indoors?</h4>
+                    <p>Yes — both the ceremony and reception will take place indoors at Sandon Hall. If the weather allows, you’re welcome to enjoy the beautiful outdoor grounds during the day.</p>
+                </div>
+
+                <div class="faq-entry">
+                    <h4>What time should we arrive?</h4>
+                    <p>Please arrive by <strong>12:45 PM</strong> so everyone is seated and settled ahead of the <strong>1:00 PM</strong> ceremony start.</p>
+                </div>
+
+                <div class="faq-entry">
+                    <h4>Can we edit our RSVP after submitting?</h4>
+                    <p>Yes — simply submit the form again with the updated details, or contact us (details below). We’ll always use your most recent response.</p>
+                </div>
+
+                <div class="faq-entry">
+                    <h4>What if we have allergies, dietary needs, or accessibility requirements?</h4>
+                    <p>Please include all dietary requirements, allergies, and accessibility needs in your RSVP. Sandon Hall has accessible access and onsite parking — we want your day to be as comfortable as possible.</p>
+                </div>
+
+                <div class="faq-entry">
+                    <h4>Can we smoke or vape anywhere on site?</h4>
+                    <p>No. Sandon Hall enforces a strict <strong>no smoking</strong> and <strong>no vaping</strong> policy across the entire property, including all outdoor areas. Thank you for respecting this venue requirement.</p>
+                </div>
+
+                <div class="faq-entry">
+                    <h4>Who should we contact with questions?</h4>
+                    <p>Please feel free to reach out to us directly. <em>(Add an email address or contact person here when ready.)</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" tabindex="-1">
+            <div class="section-label">Contact</div>
+            <h2>Get in Touch</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">If you have any questions at all, we’re happy to help.</p>
+
+            <div class="luxe-card" style="text-align:center;">
+                <p style="margin-top: 0.5rem;">
+                    <strong>Email:</strong> <span style="opacity:0.8;">(add your email here)</span><br>
+                    <strong>Phone:</strong> <span style="opacity:0.8;">(optional)</span>
+                </p>
+                <p style="margin-top: 2rem; color:#666;">
+                    Please include your name as written on the invitation so we can respond quickly.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="monogram-footer">N&J</div>
+        <p>Nashira &amp; Jake · 30 March 2027 · Sandon Hall</p>
+    </footer>
+
+    <script>
+    (function () {
+        // --- Elements we will swap ---
+        const els = {
+        skip: document.querySelector('.skip-link'),
+        hero: document.querySelector('.hero-content'),
+        details: document.querySelector('#details'),
+        schedule: document.querySelector('#schedule'),
+        travel: document.querySelector('#travel'),
+        rsvp: document.querySelector('#rsvp'),
+        registry: document.querySelector('#registry'),
+        faq: document.querySelector('#faq'),
+        contact: document.querySelector('#contact'),
+        footer: document.querySelector('footer'),
+        toggle: document.querySelector('#langToggle')
+        };
+
+        // Guard: if something is missing, fail gracefully
+        if (!els.toggle) return;
+
+        // Store original (English) content exactly as-is
+        const original = {
+        title: document.title,
+        lang: document.documentElement.lang || 'en',
+        skipText: els.skip ? els.skip.textContent : null,
+        hero: els.hero ? els.hero.innerHTML : null,
+        details: els.details ? els.details.innerHTML : null,
+        schedule: els.schedule ? els.schedule.innerHTML : null,
+        travel: els.travel ? els.travel.innerHTML : null,
+        rsvp: els.rsvp ? els.rsvp.innerHTML : null,
+        registry: els.registry ? els.registry.innerHTML : null,
+        faq: els.faq ? els.faq.innerHTML : null,
+        contact: els.contact ? els.contact.innerHTML : null,
+        footer: els.footer ? els.footer.innerHTML : null
+        };
+
+        // Spanish versions (handcrafted so it reads well)
+        const es = {
+        title: "Nashira & Jake | 30 marzo 2027",
+        skipText: "Saltar al contenido principal",
+
+        hero: `
+            <div class="monogram">N&J</div>
+            <h1>Nashira &amp; Jake</h1>
+            <div class="divider-line"></div>
+            <p class="date">30 de marzo de 2027</p>
+            <p>Sandon Hall · Stafford</p>
+            <a href="#rsvp" class="btn">Confirmar asistencia</a>
+        `,
+
+        details: `
+            <div class="section-label">La celebración</div>
+            <h2>Invitación</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">Con mucha ilusión, os invitamos a acompañarnos y celebrar con nosotros en el magnífico Sandon Hall.</p>
+
+            <div class="luxe-card">
+            <h3>El lugar</h3>
+            <p style="margin-top: 1.5rem; text-align: center;"><strong>Sandon Hall</strong><br>
+            Sandon, Stafford<br>
+            ST18 0BZ, Reino Unido</p>
+
+            <p style="margin-top: 2.5rem; text-align: center;">Una finca histórica excepcional, perfecta para nuestra ceremonia y celebración. Todo tendrá lugar en el interior, con los jardines disponibles para disfrutar si el tiempo lo permite.</p>
+
+            <div class="info-columns">
+                <div class="info-col">
+                <h4>Llegada</h4>
+                <p>12:45<br>Por favor, puntualidad</p>
+                </div>
+
+                <div class="info-col">
+                <h4>Ceremonia</h4>
+                <p>13:00<br>Intercambio de votos</p>
+                </div>
+
+                <div class="info-col">
+                <h4>Celebración</h4>
+                <p>Hasta 00:30<br>Hasta la madrugada</p>
+                </div>
+            </div>
+
+            <div class="info-columns" style="margin-top: 3rem;">
+                <div class="info-col">
+                <h4>Aparcamiento</h4>
+                <p>Aparcamiento gratuito en el recinto</p>
+                </div>
+
+                <div class="info-col">
+                <h4>Accesibilidad</h4>
+                <p>Acceso adaptado disponible</p>
+                </div>
+            </div>
+            </div>
+        `,
+
+        schedule: `
+            <div class="section-label">El programa</div>
+            <h2>Horario</h2>
+            <div class="ornament">❦</div>
+
+            <div class="elegant-timeline">
+            <div class="timeline-event">
+                <div class="event-time">13:00</div>
+                <div class="event-content">
+                <h4>Ceremonia</h4>
+                <p>Intercambiaremos nuestros votos. Por favor, tomad asiento antes de las 12:45.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="event-time">14:00</div>
+                <div class="event-content">
+                <h4>Recepción</h4>
+                <p>Brindis y canapés para comenzar la celebración.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="event-time">16:00</div>
+                <div class="event-content">
+                <h4>Banquete</h4>
+                <p>Una experiencia gastronómica de tres platos.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="event-time">19:00</div>
+                <div class="event-content">
+                <h4>Discursos</h4>
+                <p>Brindis, palabras especiales y corte de tarta.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="event-time">20:00</div>
+                <div class="event-content">
+                <h4>Fiesta</h4>
+                <p>Nuestro primer baile dará comienzo a una noche de celebración hasta las 00:30.</p>
+                </div>
+            </div>
+            </div>
+        `,
+
+        travel: `
+            <div class="section-label">Alojamiento</div>
+            <h2>Hoteles</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">Para vuestra comodidad, aquí tenéis algunas opciones cercanas que recomendamos.</p>
+
+            <div class="hotel-showcase">
+            <div class="hotel-item">
+                <h4>The Dog and Doublet Inn</h4>
+                <p>Sandon, ST18 0JD<br>
+                Ubicado de forma muy práctica al final del acceso a Sandon Hall. Dispone de 11 habitaciones con opción de alojamiento y desayuno.</p>
+                <a href="http://www.doganddoubletsandon.co.uk/sleep" target="_blank" rel="noopener noreferrer">Reservar →</a>
+            </div>
+
+            <div class="hotel-item">
+                <h4>Swan Hotel Stafford</h4>
+                <p>Stafford, ST16 2AJ</p>
+                <a href="http://www.theswanstafford.co.uk" target="_blank" rel="noopener noreferrer">Reservar →</a>
+            </div>
+
+            <div class="hotel-item">
+                <h4>Premier Inn Spitfire</h4>
+                <p>Stafford, ST16 1GX</p>
+                <a href="http://www.premierinn.com" target="_blank" rel="noopener noreferrer">Reservar →</a>
+            </div>
+
+            <div class="hotel-item">
+                <h4>The Moat House</h4>
+                <p>Stafford, ST17 0RJ<br>
+                En ocasiones puede ofrecer opción de bloque con descuento.</p>
+                <a href="http://www.moathouse.co.uk" target="_blank" rel="noopener noreferrer">Reservar →</a>
+            </div>
+
+            <div class="hotel-item">
+                <h4>The Saracen’s Head</h4>
+                <p>Weston, ST18 0HT</p>
+                <a href="http://www.saracensheadweston.co.uk" target="_blank" rel="noopener noreferrer">Reservar →</a>
+            </div>
+
+            <div class="hotel-item">
+                <h4>Stone House Hotel</h4>
+                <p>Stone, ST15 0BQ</p>
+                <a href="http://www.bespokehotels.com/stonehousehotel" target="_blank" rel="noopener noreferrer">Reservar →</a>
+            </div>
+            </div>
+        `,
+
+        rsvp: `
+            <div class="section-label">Tu respuesta</div>
+            <h2>Confirmación</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">Por favor, confirmad antes del <strong>30 de septiembre de 2026</strong>. Si podéis, os agradeceríamos que respondierais cuanto antes.</p>
+
+            <form name="rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="rsvp">
+            <p style="display: none;">
+                <label>No completar: <input name="bot-field"></label>
+            </p>
+
+            <label for="attendance">Asistencia *</label>
+            <select id="attendance" name="attendance" required>
+                <option value="">Selecciona una opción</option>
+                <option value="yes">Encantados de asistir</option>
+                <option value="no">Lamentablemente no podremos asistir</option>
+            </select>
+
+            <label for="name">Nombre(s) del/de los invitado(s) *</label>
+            <input type="text" id="name" name="name" required aria-required="true" placeholder="Tal y como aparece en la invitación">
+
+            <label for="dietary">Alergias / requisitos alimentarios</label>
+            <textarea id="dietary" name="dietary" placeholder="Indicad alergias, intolerancias o preferencias"></textarea>
+
+            <label for="accessibility">Necesidades de accesibilidad</label>
+            <textarea id="accessibility" name="accessibility" placeholder="Contadnos cualquier necesidad para vuestra comodidad"></textarea>
+
+            <label for="song">Canción (opcional)</label>
+            <input type="text" id="song" name="song" placeholder="Sugerid una canción para la fiesta">
+
+            <button type="submit">Enviar respuesta</button>
+            </form>
+
+            <div class="importance-notice">
+            <h3>Información importante</h3>
+            <ul>
+                <li>La celebración es solo para adultos (sin niños). Gracias por vuestra comprensión.</li>
+                <li>Por capacidad, solo podremos recibir a las personas nombradas en la invitación (sin acompañantes/plus ones).</li>
+                <li>El recinto aplica una norma estricta de <strong>prohibido fumar y vapear</strong> en toda la propiedad, también en exteriores.</li>
+            </ul>
+            </div>
+        `,
+
+        registry: `
+            <div class="section-label">Gracias</div>
+            <h2>Regalos</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">Vuestra presencia es el mejor regalo. Si aun así queréis tener un detalle, nos haría mucha ilusión una contribución para nuestro futuro juntos.</p>
+
+            <div class="registry-showcase">
+            <div class="registry-item">
+                <h4>Nuestro hogar</h4>
+                <p>Ayuda para la entrada de nuestra futura casa.</p>
+            </div>
+
+            <div class="registry-item">
+                <h4>Nuestra aventura</h4>
+                <p>Un empujón para crear recuerdos en nuestra luna de miel.</p>
+            </div>
+
+            <div class="registry-item">
+                <h4>Nuestra boda</h4>
+                <p>Contribución para que este día sea aún más especial.</p>
+            </div>
+            </div>
+        `,
+
+        faq: `
+            <div class="section-label">Preguntas</div>
+            <h2>Dudas frecuentes</h2>
+            <div class="ornament">❦</div>
+
+            <div class="faq-elegant">
+            <div class="faq-entry">
+                <h4>¿Podemos llevar niños?</h4>
+                <p>Aunque nos encantan los peques, hemos elegido una celebración solo para adultos para que todos podáis relajaros y disfrutar plenamente.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Podemos llevar acompañante?</h4>
+                <p>La lista de invitados es limitada y solo podremos recibir a las personas indicadas en la invitación. Si incluye acompañante, aparecerá claramente.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Cuál es la política de fumar?</h4>
+                <p>Sandon Hall tiene una norma estricta de <strong>no fumar</strong> y <strong>no vapear</strong> en todo el recinto, tanto interior como exterior. Gracias por respetar este requisito del lugar.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿El lugar es accesible?</h4>
+                <p>Sí, Sandon Hall ofrece acceso adaptado. Por favor, indicad cualquier necesidad específica en el RSVP.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Hay aparcamiento?</h4>
+                <p>Sí, hay aparcamiento gratuito en el recinto para todos los invitados.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Cómo debemos vestir?</h4>
+                <p>Os pedimos vestimenta formal. Vestidos de cóctel o de noche, trajes y esmóquines son perfectos.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Será todo en interior?</h4>
+                <p>Sí — ceremonia y recepción serán en el interior de Sandon Hall. Si hace buen tiempo, podréis disfrutar de los jardines durante el día.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿A qué hora debemos llegar?</h4>
+                <p>Por favor, llegad antes de las <strong>12:45</strong> para que todos estemos sentados antes de la ceremonia a las <strong>13:00</strong>.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Podemos cambiar el RSVP después de enviarlo?</h4>
+                <p>Sí — podéis enviar el formulario de nuevo con la información actualizada (usaremos la respuesta más reciente) o escribirnos.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Alergias, dietas o accesibilidad?</h4>
+                <p>Indicad alergias, necesidades alimentarias o accesibilidad en el RSVP. Queremos que estéis lo más cómodos posible.</p>
+            </div>
+
+            <div class="faq-entry">
+                <h4>¿Con quién contactamos si tenemos preguntas?</h4>
+                <p>Podéis escribirnos directamente. <em>(Añadid aquí un email o persona de contacto cuando queráis.)</em></p>
+            </div>
+            </div>
+        `,
+
+        contact: `
+            <div class="section-label">Contacto</div>
+            <h2>Escríbenos</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">Si tenéis cualquier duda, estaremos encantados de ayudaros.</p>
+
+            <div class="luxe-card" style="text-align:center;">
+            <p style="margin-top: 0.5rem;">
+                <strong>Email:</strong> <span style="opacity:0.8;">(añade tu email aquí)</span><br>
+                <strong>Teléfono:</strong> <span style="opacity:0.8;">(opcional)</span>
+            </p>
+            <p style="margin-top: 2rem; color:#666;">
+                Por favor, indicad vuestro nombre tal y como aparece en la invitación para poder responder más rápido.
+            </p>
+            </div>
+        `,
+
+        footer: `
+            <div class="monogram-footer">N&J</div>
+            <p>Nashira &amp; Jake · 30 marzo 2027 · Sandon Hall</p>
+        `
+        };
+
+        function bindRsvpSubmitUX() {
+        const form = document.querySelector('form[name="rsvp"]');
+        if (!form) return;
+
+        form.addEventListener('submit', function () {
+            const btn = form.querySelector('button[type="submit"]');
+            if (btn) {
+            btn.disabled = true;
+            btn.textContent = (currentLang === 'es') ? "Enviando…" : "Submitting…";
+            }
+        }, { once: true });
+        }
+
+        function setLang(lang) {
+        currentLang = lang;
+
+        if (lang === 'es') {
+            document.documentElement.lang = 'es';
+            document.title = es.title;
+
+            if (els.skip) els.skip.textContent = es.skipText;
+            if (els.hero) els.hero.innerHTML = es.hero;
+            if (els.details) els.details.innerHTML = es.details;
+            if (els.schedule) els.schedule.innerHTML = es.schedule;
+            if (els.travel) els.travel.innerHTML = es.travel;
+            if (els.rsvp) els.rsvp.innerHTML = es.rsvp;
+            if (els.registry) els.registry.innerHTML = es.registry;
+            if (els.faq) els.faq.innerHTML = es.faq;
+            if (els.contact) els.contact.innerHTML = es.contact;
+            if (els.footer) els.footer.innerHTML = es.footer;
+
+            els.toggle.textContent = "EN";
+            els.toggle.setAttribute('aria-label', 'Switch to English');
+        } else {
+            document.documentElement.lang = original.lang;
+            document.title = original.title;
+
+            if (els.skip && original.skipText != null) els.skip.textContent = original.skipText;
+            if (els.hero && original.hero != null) els.hero.innerHTML = original.hero;
+            if (els.details && original.details != null) els.details.innerHTML = original.details;
+            if (els.schedule && original.schedule != null) els.schedule.innerHTML = original.schedule;
+            if (els.travel && original.travel != null) els.travel.innerHTML = original.travel;
+            if (els.rsvp && original.rsvp != null) els.rsvp.innerHTML = original.rsvp;
+            if (els.registry && original.registry != null) els.registry.innerHTML = original.registry;
+            if (els.faq && original.faq != null) els.faq.innerHTML = original.faq;
+            if (els.contact && original.contact != null) els.contact.innerHTML = original.contact;
+            if (els.footer && original.footer != null) els.footer.innerHTML = original.footer;
+
+            els.toggle.textContent = "ES";
+            els.toggle.setAttribute('aria-label', 'Translate to Spanish');
+        }
+
+        localStorage.setItem('wedding_lang', currentLang);
+
+        // Rebind form submit UX after swapping content
+        bindRsvpSubmitUX();
+        }
+
+        // Preserve your existing "hash focus" behaviour
+        function focusHashTarget() {
+        const hash = window.location.hash;
+        if (!hash) return;
+        const target = document.querySelector(hash);
+        if (!target) return;
+        setTimeout(() => {
+            if (target && typeof target.focus === 'function') {
+            target.focus({ preventScroll: true });
+            }
+        }, 250);
+        }
+
+        let currentLang = localStorage.getItem('wedding_lang') || 'en';
+
+        els.toggle.addEventListener('click', function () {
+        setLang(currentLang === 'es' ? 'en' : 'es');
+        focusHashTarget();
+        });
+
+        // Init
+        setLang(currentLang);
+        focusHashTarget();
+    })();
+    </script>
+
+</body>
+</html>
