@@ -705,6 +705,31 @@
             </div>
         </section>
 
+        <section id="dresscode" tabindex="-1">
+            <div class="section-label">Dress Code</div>
+            <h2>What to Wear</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">We invite you to wear a floor-length gown or midi dress in a solid, tonal, or delicate floral fabric, with an elegant and refined finish — letting our colour palette be your guide:</p>
+
+            <img src="color-palette.jpg" alt="Wedding colour palette — vibrant florals in glass vases" style="width: 100%; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.08); margin-bottom: 4rem;">
+
+            <div class="info-columns">
+                <div class="info-col">
+                    <h4>Silhouette</h4>
+                    <p>Floor-length gown or midi dress</p>
+                </div>
+                <div class="info-col">
+                    <h4>Fabric</h4>
+                    <p>Solid, tonal, or delicate floral</p>
+                </div>
+                <div class="info-col">
+                    <h4>Style</h4>
+                    <p>Elegant and refined</p>
+                </div>
+            </div>
+        </section>
+
         <section id="registry" tabindex="-1">
             <div class="section-label">Your Kindness</div>
             <h2>Registry</h2>
@@ -728,6 +753,31 @@
                     <p>Support our wedding day and help us create this magical experience.</p>
                 </div>
             </div>
+
+            <div class="luxe-card" style="margin-top: 4rem;">
+                <h3>Our Joint Account</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0; margin-top: 2.5rem;">
+                    <div style="padding: 0 2.5rem 0 0; text-align: center;">
+                        <h4 style="font-family: 'Raleway', sans-serif; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--champagne); margin-bottom: 1.5rem;">International Transfers</h4>
+                        <p style="font-size: 0.95rem; line-height: 2;">
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-bottom: 0.25rem;">IBAN</span>
+                            GB47 HBUK 4047 6701 1814 91
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-top: 1rem; margin-bottom: 0.25rem;">BIC</span>
+                            HBUKGB41FDS
+                        </p>
+                    </div>
+                    <div style="background: #e8e8e8;"></div>
+                    <div style="padding: 0 0 0 2.5rem; text-align: center;">
+                        <h4 style="font-family: 'Raleway', sans-serif; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--champagne); margin-bottom: 1.5rem;">National Transfers</h4>
+                        <p style="font-size: 0.95rem; line-height: 2;">
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-bottom: 0.25rem;">Sort Code</span>
+                            40-47-67
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-top: 1rem; margin-bottom: 0.25rem;">Account Number</span>
+                            01181491
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="rsvp" tabindex="-1">
@@ -742,6 +792,7 @@
                     <li>Guest list is limited to those named on your invitation—no additional guests unless specified</li>
                     <li>Sandon Hall enforces a strict no-smoking and no-vaping policy throughout the entire property, including all outdoor areas</li>
                     <li>We kindly ask guests to arrive early, as doors will close at 13:20 ahead of the ceremony. Unfortunately, we won't be able to let anyone in after this time.</li>
+                    <li>We kindly ask that you keep our colour palette and style guide in mind when choosing your outfit—we’d love for everyone to be part of the overall look and feel of the day.</li>
                 </ul>
             </div>
 
@@ -856,7 +907,7 @@
                 
                 <div class="faq-entry">
                     <h4>What should we wear?</h4>
-                    <p>We request formal attire. Cocktail dresses, evening gowns, suits, and tuxedos are all appropriate.</p>
+                    <p>You can find our colour palette and style guidance in the dress code section—we’d really appreciate you keeping this in mind when picking your outfit.</p>
                 </div>
                 
                 <div class="faq-entry">
@@ -892,6 +943,7 @@
         hero: document.querySelector('.hero-content'),
         details: document.querySelector('#details'),
         schedule: document.querySelector('#schedule'),
+        dresscode: document.querySelector('#dresscode'),
         travel: document.querySelector('#travel'),
         rsvp: document.querySelector('#rsvp'),
         registry: document.querySelector('#registry'),
@@ -911,6 +963,7 @@
         hero: els.hero ? els.hero.innerHTML : null,
         details: els.details ? els.details.innerHTML : null,
         schedule: els.schedule ? els.schedule.innerHTML : null,
+        dresscode: els.dresscode ? els.dresscode.innerHTML : null,
         travel: els.travel ? els.travel.innerHTML : null,
         rsvp: els.rsvp ? els.rsvp.innerHTML : null,
         registry: els.registry ? els.registry.innerHTML : null,
@@ -1025,6 +1078,31 @@
             </div>
         `,
 
+        dresscode: `
+            <div class="section-label">Vestimenta</div>
+            <h2>Cómo vestir</h2>
+            <div class="ornament">❦</div>
+
+            <p class="lead-text">Os invitamos a lucir un vestido largo o midi en tejido liso, tonal o floral delicado, con un estilo elegante y refinado — dejándoos guiar por nuestra paleta de colores.</p>
+
+            <img src="color-palette.jpg" alt="Paleta de colores de la boda — flores vibrantes en jarrones de cristal" style="width: 100%; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.08); margin-bottom: 4rem;">
+
+            <div class="info-columns">
+                <div class="info-col">
+                    <h4>Silueta</h4>
+                    <p>Se prefiere vestido largo o midi</p>
+                </div>
+                <div class="info-col">
+                    <h4>Tejido</h4>
+                    <p>Liso, tonal o floral delicado</p>
+                </div>
+                <div class="info-col">
+                    <h4>Estilo</h4>
+                    <p>Elegante y refinado</p>
+                </div>
+            </div>
+        `,
+
         travel: `
             <div class="section-label">Alojamiento</div>
             <h2>Hoteles</h2>
@@ -1084,6 +1162,8 @@
                 <li>Por capacidad, solo podremos recibir a las personas nombradas en la invitación (sin acompañantes/plus ones).</li>
                 <li>El recinto aplica una norma estricta de <strong>prohibido fumar y vapear</strong> en toda la propiedad, también en exteriores.</li>
                 <li>Os pedimos amablemente que lleguéis con antelación, ya que las puertas se cerrarán a las 13:20 antes de la ceremonia. Lamentablemente, no podremos permitir la entrada después de esa hora.</li>
+                <li>Os pedimos amablemente que tengáis en cuenta nuestra paleta de colores y guía de estilo al elegir vuestro atuendo; nos encantaría que todos forméis parte de la estética y el ambiente del día.</li>
+
             </ul>
             </div>
 
@@ -1151,6 +1231,31 @@
                 <p>Contribución para que este día sea aún más especial.</p>
             </div>
             </div>
+
+            <div class="luxe-card" style="margin-top: 4rem;">
+                <h3>Nuestra cuenta conjunta</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0; margin-top: 2.5rem;">
+                    <div style="padding: 0 2.5rem 0 0; text-align: center;">
+                        <h4 style="font-family: 'Raleway', sans-serif; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--champagne); margin-bottom: 1.5rem;">Transferencias internacionales</h4>
+                        <p style="font-size: 0.95rem; line-height: 2;">
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-bottom: 0.25rem;">IBAN</span>
+                            GB47 HBUK 4047 6701 1814 91
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-top: 1rem; margin-bottom: 0.25rem;">BIC</span>
+                            HBUKGB41FDS
+                        </p>
+                    </div>
+                    <div style="background: #e8e8e8;"></div>
+                    <div style="padding: 0 0 0 2.5rem; text-align: center;">
+                        <h4 style="font-family: 'Raleway', sans-serif; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--champagne); margin-bottom: 1.5rem;">Transferencias nacionales</h4>
+                        <p style="font-size: 0.95rem; line-height: 2;">
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-bottom: 0.25rem;">Código de clasificación</span>
+                            40-47-67
+                            <span style="display: block; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: #999; margin-top: 1rem; margin-bottom: 0.25rem;">Número de cuenta</span>
+                            01181491
+                        </p>
+                    </div>
+                </div>
+            </div>
         `,
 
         faq: `
@@ -1186,7 +1291,7 @@
 
             <div class="faq-entry">
                 <h4>¿Cómo debemos vestir?</h4>
-                <p>Os pedimos vestimenta formal. Vestidos de cóctel o de noche, trajes y esmóquines son perfectos.</p>
+                <p>Podéis encontrar nuestra paleta de colores y guía de estilo en la sección de código de vestimenta; os agradeceríamos mucho que la tengáis en cuenta al elegir vuestro atuendo.</p>
             </div>
 
             <div class="faq-entry">
@@ -1235,6 +1340,7 @@
             if (els.hero) els.hero.innerHTML = es.hero;
             if (els.details) els.details.innerHTML = es.details;
             if (els.schedule) els.schedule.innerHTML = es.schedule;
+            if (els.dresscode) els.dresscode.innerHTML = es.dresscode;
             if (els.travel) els.travel.innerHTML = es.travel;
             if (els.rsvp) els.rsvp.innerHTML = es.rsvp;
             if (els.registry) els.registry.innerHTML = es.registry;
@@ -1251,6 +1357,7 @@
             if (els.hero && original.hero != null) els.hero.innerHTML = original.hero;
             if (els.details && original.details != null) els.details.innerHTML = original.details;
             if (els.schedule && original.schedule != null) els.schedule.innerHTML = original.schedule;
+            if (els.dresscode && original.dresscode != null) els.dresscode.innerHTML = original.dresscode;
             if (els.travel && original.travel != null) els.travel.innerHTML = original.travel;
             if (els.rsvp && original.rsvp != null) els.rsvp.innerHTML = original.rsvp;
             if (els.registry && original.registry != null) els.registry.innerHTML = original.registry;
